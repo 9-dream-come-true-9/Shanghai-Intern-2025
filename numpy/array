@@ -12,19 +12,37 @@ zyj随机数，两行四列
 a=np.random.randn(2,4)
 
 
-zyjnumpy索引
+zyj numpy索引
 a=np.arange(20).reshape(4,5)
 print(a[0:2,2:4])
-print(a[:,2])
+print(a[:,2]) 表示所有行，第二列
 
 
 zyj筛选
+
 筛选=a>5
 print(筛选)
+[[False False False False False]
+ [False  True  True  True  True]
+ [ True  True  True  True  True]
+ [ True  True  True  True  True]]
 print(a[筛选])
+[ 6  7  8  9 10 11 12 13 14 15 16 17 18 19]
 
 
-##找出偶数或者小于七的数
+zyj找出偶数或者小于七的数
 条件=(a%2==0)|(a<7)
 print(a[条件])
+
+
+zyjzyj 转置
+import numpy as np
+数组=np.arange(24).reshape((4,6))
+print(数组.transpose())
+
+
+zyjzyj  rand 0,1随机数
+import numpy as np
+print(np.random.rand(3))
+
 
