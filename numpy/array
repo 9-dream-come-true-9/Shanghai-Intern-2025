@@ -46,3 +46,29 @@ import numpy as np
 print(np.random.rand(3))
 
 
+zyjzyj  randn 随机平均数0，方差1
+print(np.random.randn(2,3,4))
+
+
+zyjzyj randint  随机整数
+import numpy as np
+e = np.random.randint(1, 20, size=(2,3,4))
+print(f'随机1至20之间取24个元素组成三维数组:\n{e})')   \n是为了换行
+
+
+zyjzyj   random  随机0.0---1.0的小数
+
+
+zyjzyj  choice c从已知数据随机        从[1, 2, 9, 4, 8, 6, 7, 5]数组中拿随机数，生成2行3列的数组是
+import numpy as np
+print(np.random.choice([1, 2, 9, 4, 8, 6, 7, 5],(2,3)))
+
+
+zyjzyj
+normal 生成正态分布数字4.7 
+shuffle（数组）把一个数进行随机排列注意：多维数组随机排列只按行随机，列是不变的
+
+zyjzyj a = np.array([1,2,3,4,3,5,3,6])
+print(np.cumsum(a))   # 累加和形成数组
+
+print(np.cumprod(a))  # 从1开始元素的累积，形成数组
