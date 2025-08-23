@@ -1,0 +1,4 @@
+import pandas as pd
+路径='D:/pandas/读取文件.txt'
+读取数据=pd.read_csv(路径)
+print(读取数据)
